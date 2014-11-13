@@ -10,10 +10,18 @@ body {
   text-align: center;
 }
 
+/* line 10, ../sass/main.scss */
+.navbar-brand {
+  padding: 0;
+}
+
+/*.navbar-brand a {
+	margin-left: -30px;
+}*/
 /*.navbar-header{
 	background: url(../img/m-head.gif) no-repeat left;
 }*/
-/* line 21, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .offerbox-title a {
   display: block;
   font-size: 2em;
@@ -27,18 +35,18 @@ body {
   margin-top: 5px;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .offer-title {
   display: block;
   font-size: 1.4em;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .offer-title ul {
   list-style: none;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .offer-title ul li {
   border-bottom: 1px solid #E8E8E8;
   background-image: url(../img/bullet02.gif);
@@ -58,11 +66,17 @@ body {
     padding-left: 40px; 
     padding-bottom: 10px;
 }*/
-@media screen and (max-width: 768px) {
-  /* line 63, ../sass/main.scss */
-  .navbar-default {
-    background: url(../img/im-head.gif) no-repeat;
-    background-size: 100%;
-    background-repeat: no-repeat;
+/*@media screen and (max-width: 768px){
+	.navbar-default {
+	background: url(../img/im-head.gif) no-repeat;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	}
+}*/
+@media (min-width: 768px) {
+  /* line 80, ../sass/main.scss */
+  .navbar-brand.hidden-xs a {
+    margin-left: -30px;
   }
 }
