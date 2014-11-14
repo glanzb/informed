@@ -11,9 +11,6 @@ body {
 	padding: 0;
 }
 
-/*.navbar-brand a {
-	margin-left: -30px;
-}*/
 
 $font: 1em;
 $bg: #E7DFC9;
@@ -22,9 +19,9 @@ $bg: #E7DFC9;
 	border-bottom: 5px solid #61A2CC;
 	}
 
-/*.navbar-header{
-	background: url(../img/m-head.gif) no-repeat left;
-}*/
+@mixin gray-line {
+	border-bottom: 2px solid #E8E8E8;
+}
 
 .offerbox-title a {
 	display: block;
@@ -49,7 +46,7 @@ $bg: #E7DFC9;
 }
 
 .offer-title ul li{
-	border-bottom: 1px solid #E8E8E8;
+	@include gray-line;
 	background-image: url(../img/bullet02.gif);
 	background-size: 10px;
     background-repeat: no-repeat;
@@ -57,28 +54,11 @@ $bg: #E7DFC9;
     padding-left: 15px;
    	padding-bottom: 10px;
 }
-/*
-.offer-title ul li::before {
-	content: url(../img/bullet02.gif);
-	background-size: 40px 35px;
-    background-repeat: no-repeat;
-    background-position: 0px 3px; 
-    padding-left: 40px; 
-    padding-bottom: 10px;
-}*/
 
-/*@media screen and (max-width: 768px){
-	.navbar-default {
-	background: url(../img/im-head.gif) no-repeat;
-	background-size: 100%;
-	background-repeat: no-repeat;
-
-	}
-}*/
-
-@media (min-width: 768px) {
-	.navbar-brand.hidden-xs a{
-	margin-left: -30px;
-}
-	
+#qa-icons{
+	font-size: $font * 3;
+	background: $bg;
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
 }
