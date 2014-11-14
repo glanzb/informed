@@ -1,3 +1,15 @@
+$font: 1em;
+$bg: #E7DFC9;
+$midblue: #61A2CC;
+
+@mixin border-bottom {
+	border-bottom: 5px solid #61A2CC;
+	}
+
+@mixin gray-line {
+	border-bottom: 2px solid #E8E8E8;
+}
+
 body {
   padding-top: 50px;
   background: url(../img/body_bg.gif);
@@ -11,17 +23,27 @@ body {
 	padding: 0;
 }
 
-
-$font: 1em;
-$bg: #E7DFC9;
-
-@mixin border-bottom {
-	border-bottom: 5px solid #61A2CC;
-	}
-
-@mixin gray-line {
-	border-bottom: 2px solid #E8E8E8;
+#car-container {
+	max-width: 80%;
+	margin: 0 auto;
 }
+.carousel-indicators {
+	bottom: 0;
+}
+
+.carousel-indicators .active {
+	background-color: $midblue;
+}
+
+.carousel-indicators li {
+	border-color: $midblue;
+}
+
+
+/*#car-container > img {
+	width: 200px;
+}*/
+
 
 .offerbox-title a {
 	display: block;
@@ -58,6 +80,7 @@ $bg: #E7DFC9;
 #qa-icons{
 	font-size: $font * 3;
 	background: $bg;
+	color: $midblue;
 	text-align: center;
 	padding: 10px;
 	display: inline-block;

@@ -1,21 +1,45 @@
-/* line 1, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 body {
   padding-top: 50px;
   background: url(../img/body_bg.gif);
 }
 
-/* line 5, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .navbar-brand {
   padding: 0;
 }
 
 /* line 26, ../sass/main.scss */
+#car-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* line 30, ../sass/main.scss */
+.carousel-indicators {
+  bottom: 0;
+}
+
+/* line 34, ../sass/main.scss */
+.carousel-indicators .active {
+  background-color: #61a2cc;
+}
+
+/* line 38, ../sass/main.scss */
+.carousel-indicators li {
+  border-color: #61a2cc;
+}
+
+/*#car-container > img {
+	width: 200px;
+}*/
+/* line 48, ../sass/main.scss */
 .offerbox-title a {
   display: block;
   font-size: 2em;
@@ -29,18 +53,18 @@ body {
   margin-top: 5px;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .offer-title {
   display: block;
   font-size: 1.4em;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .offer-title ul {
   list-style: none;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .offer-title ul li {
   border-bottom: 2px solid #E8E8E8;
   background-image: url(../img/bullet02.gif);
@@ -51,10 +75,11 @@ body {
   padding-bottom: 10px;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 #qa-icons {
   font-size: 3em;
   background: #e7dfc9;
+  color: #61a2cc;
   text-align: center;
   padding: 10px;
   display: inline-block;
