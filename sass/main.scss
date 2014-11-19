@@ -3,7 +3,7 @@ $bg: #E7DFC9;
 $midblue: #61A2CC;
 
 @mixin border-bottom {
-	border-bottom: 5px solid #61A2CC;
+	border-bottom: 5px solid $midblue;
 	}
 
 @mixin gray-line {
@@ -14,6 +14,16 @@ body {
   padding-top: 50px;
   background: url(../img/body_bg.gif);
 }
+
+p {
+	font-size: 1.063em;
+	line-height: 1.223;
+}
+
+a:hover {
+	color: red;
+}
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -23,10 +33,37 @@ body {
 	padding: 0;
 }
 
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
 #car-container {
 	max-width: 80%;
 	margin: 0 auto;
 }
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+.carousel-inner .item img {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  max-width: 400px;
+}
+
+.carousel-inner > .item > img {
+  position: relative;
+  top: 10px;
+  max-width: 400px;
+  height: auto;
+}
+
+
 .carousel-indicators {
 	bottom: 0;
 }
@@ -52,19 +89,20 @@ body {
 	@include border-bottom; 
 	text-transform: uppercase; 
 	color: #2B6C9B; 
-	font-weight: bold; 
-	padding: 5px 10px;
-	height: 3em; 
-	margin-top: 5px;
+	font-weight: 400; 
+	padding: 10px;
+	margin: 5px 0;
 }
 
 .offer-title {
 	display: block;
-	font-size: $font * 1.4;
+	font-size: $font;
 }
+
 
 .offer-title ul {
 	list-style: none;
+	-webkit-padding-start: 15px
 }
 
 .offer-title ul li{
@@ -72,9 +110,9 @@ body {
 	background-image: url(../img/bullet02.gif);
 	background-size: 10px;
     background-repeat: no-repeat;
-    background-position: 0 12px;  
-    padding-left: 15px;
-   	padding-bottom: 10px;
+    background-position: 0px 17px;  
+   	padding: 10px 0;
+   	padding-left: 15px;
 }
 
 #qa-icons{
@@ -83,5 +121,47 @@ body {
 	color: $midblue;
 	text-align: center;
 	padding: 10px;
-	display: inline-block;
+	margin: 0 15px 10px 15px;
+}
+
+.glyphicon:hover {
+	color: red;
+}
+
+.im-logo {
+	width: 155px;
+	margin: -.75em 0 .95em 0;
+}
+
+.thumbnail {
+	text-align: center;
+}
+
+.thumbnail:hover, .thumbnail img:hover {
+    -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+    -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+    box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+}
+
+.thumbnail img {
+	border: 5px solid $bg;
+	margin-top: 15px;
+}
+
+.thumbnail img:hover {
+	margin-top: 10px;
+}
+
+.main-footer {
+	font-size: .95em;
+}
+.link-list {
+	list-style-type: none;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0;
+}
+.copyright {
+	opacity: .8;
+	font-size: .9em;
 }

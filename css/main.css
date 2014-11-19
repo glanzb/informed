@@ -4,34 +4,74 @@ body {
   background: url(../img/body_bg.gif);
 }
 
-/* line 17, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
+p {
+  font-size: 1.063em;
+  line-height: 1.223;
+}
+
+/* line 23, ../sass/main.scss */
+a:hover {
+  color: red;
+}
+
+/* line 27, ../sass/main.scss */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .navbar-brand {
   padding: 0;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+/* line 42, ../sass/main.scss */
 #car-container {
   max-width: 80%;
   margin: 0 auto;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+/* line 52, ../sass/main.scss */
+.carousel-inner .item img {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  max-width: 400px;
+}
+
+/* line 59, ../sass/main.scss */
+.carousel-inner > .item > img {
+  position: relative;
+  top: 10px;
+  max-width: 400px;
+  height: auto;
+}
+
+/* line 67, ../sass/main.scss */
 .carousel-indicators {
   bottom: 0;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 .carousel-indicators .active {
   background-color: #61a2cc;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .carousel-indicators li {
   border-color: #61a2cc;
 }
@@ -39,48 +79,101 @@ body {
 /*#car-container > img {
 	width: 200px;
 }*/
-/* line 48, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .offerbox-title a {
   display: block;
   font-size: 2em;
   background: #e7dfc9;
-  border-bottom: 5px solid #61A2CC;
+  border-bottom: 5px solid #61a2cc;
   text-transform: uppercase;
   color: #2B6C9B;
-  font-weight: bold;
-  padding: 5px 10px;
-  height: 3em;
-  margin-top: 5px;
+  font-weight: 400;
+  padding: 10px;
+  margin: 5px 0;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .offer-title {
   display: block;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .offer-title ul {
   list-style: none;
+  -webkit-padding-start: 15px;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 108, ../sass/main.scss */
 .offer-title ul li {
   border-bottom: 2px solid #E8E8E8;
   background-image: url(../img/bullet02.gif);
   background-size: 10px;
   background-repeat: no-repeat;
-  background-position: 0 12px;
+  background-position: 0px 17px;
+  padding: 10px 0;
   padding-left: 15px;
-  padding-bottom: 10px;
 }
 
-/* line 80, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 #qa-icons {
   font-size: 3em;
   background: #e7dfc9;
   color: #61a2cc;
   text-align: center;
   padding: 10px;
-  display: inline-block;
+  margin: 0 15px 10px 15px;
+}
+
+/* line 127, ../sass/main.scss */
+.glyphicon:hover {
+  color: red;
+}
+
+/* line 131, ../sass/main.scss */
+.im-logo {
+  width: 155px;
+  margin: -0.75em 0 0.95em 0;
+}
+
+/* line 136, ../sass/main.scss */
+.thumbnail {
+  text-align: center;
+}
+
+/* line 140, ../sass/main.scss */
+.thumbnail:hover, .thumbnail img:hover {
+  -moz-box-shadow: 0 0 0.65em 0.325em rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0.65em 0.325em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.65em 0.325em rgba(0, 0, 0, 0.1);
+}
+
+/* line 146, ../sass/main.scss */
+.thumbnail img {
+  border: 5px solid #e7dfc9;
+  margin-top: 15px;
+}
+
+/* line 151, ../sass/main.scss */
+.thumbnail img:hover {
+  margin-top: 10px;
+}
+
+/* line 155, ../sass/main.scss */
+.main-footer {
+  font-size: .95em;
+}
+
+/* line 158, ../sass/main.scss */
+.link-list {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 164, ../sass/main.scss */
+.copyright {
+  opacity: .8;
+  font-size: .9em;
 }
