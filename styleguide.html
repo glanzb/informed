@@ -1,32 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://www.informed.hu/_i/im_favicon.ico">
+
+    <title>InforMed Health and Medicine</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    
+    <link href="./css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="./css/carousel.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
 <style>
-.offerbox-title {
-display: block;
-font-size: 2em;
-background: #e7dfc9;
-border-bottom: 5px solid #61A2CC;
-text-transform: uppercase;
-color: #2B6C9B;
-font-weight: 400;
-padding: 10px;
-margin: 5px 0;
-}
 
-#colors {
-	width: 50px;
-	height: 30px;
+.colors tr td {
+	width: 150px;
+	height: 150px;
 	padding: 5px;
-	display: block;
+	border: 5px solid white;
 }
 
+body {
+  padding: 10px;
+  background: #fff;
+}
+.wrapper {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
 
+.guide-title {
+	color: #0079C1;
+	font-family:Georgia, Tahoma;
+	border-bottom: 2px solid #E8E8E8;
+	font-size: 2.5em;
+	display: inline-block;
+	margin: 10px 0;
+}
+.carousel-indicators {
+	position: relative;
+	bottom: 0;
+}
 
 </style>
+<div class="wrapper">
 
-<div id="colors">
-		<p bgcolor="#E7DFC9">$bg: #E7DFC9;</td>
-		<p bgcolor="#61A2CC">$midblue (@border-bottom): #61A2CC;</td>
-		<td bgcolor="#2B6C9B">text color: #2B6C9B</td>
-		<td bgcolor="#E8E8E8">gray line: #E8E8E8</td>
+	<h1>InforMed style guide</h1>
+	<hr/>
+	
+
+	<div class="guide-title">Colors</div>
+	<div class="colors">
+	<table>
+		<tr style="color: white;">
+			<td style="background: #2B6C9B;">text color: #2B6C9B</td>
+			<td style="background: #61A2CC;">$midblue (@border-bottom): #61A2CC;</td>
+			<td style="background: #5695C1;">#5695C1</td>
+		</tr>
+		<tr>
+			<td style="background: #E7DFC9;">$bg: #E7DFC9;</td>
+			<td style="background: #E8E8E8;">gray line: #E8E8E8</td>
+			<td style="background: url(./img/body_bg.gif);">body background</td>
+		</tr>
+		</table>
+	</div>
+
+	<div class="guide-title">Typography</div>
+	<div>
+		<h1>This text is h1</h1>
+		<h2>This text is h2</h2>
+		<h3>This text is h3</h3>
+		<h4>This text is h4</h4>
+		<p>This is a paragraph</p>
+		<a href="#">this is a link</a>
+	</div>
+
+	<div class="guide-title">Offerbox headers and lists</div>
+		<div class="offerbox-title">
+		<a>Offerbox title </a>
+		</div>
+	<div class="offer-title">
+	    <ul>
+		    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
+		    <li><a href="#">Aliquam tincidunt mauris eu risus.
+		    <li><a href="#">Vestibulum auctor dapibus neque.
+		    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
+		    <li><a href="#">Aliquam tincidunt mauris eu risus.
+		    <li><a href="#">Vestibulum auctor dapibus neque.</a>
+		    <li><a href="#">Aliquam tincidunt mauris eu risus.
+		    <li><a href="#">Vestibulum auctor dapibus neque.</a>
+		  </ul>
+	</div>
+
+	<div class="guide-title">Offerboxes</div>          
+  		<div class="thumbnail">
+          <h3>Thumbnail label</h3>
+          <p>...</p>
+          <img data-src="holder.js/200x200" alt="...">
+          	<div class="caption">
+	        	<div class="row" id="qa-icons">
+	              <div class="col-xs-4">
+	              <b class="glyphicon glyphicon-user"></b><h3><a href="/qa.html">about me</a></h3>
+	              </div>
+	              <div class="col-xs-4">
+	              <b class="glyphicon glyphicon-list"></b><h3>prev. answers</h3>
+	              </div>
+	              <div class="col-xs-4">
+	              <b class="glyphicon glyphicon-envelope"></b><h3>have a question?</a></h3>
+	            </div>
+	         </div>        	
+	    </div>
+	</div>    
+
+	<div class="thumbnail">
+	    <img src="img/200-baba.jpg" class="img-responsive" alt="...">
+	    <div class="caption">
+	    <h4><a href="#">Babanaplo</h4></a>
+    	</div>
+    </div>
+
+    
+
+	<div class="guide-title">Buttons, carousel indicators</div>
+		<p><a class="btn btn-lg btn-primary" href="#" role="button">Tovabb</a></p>
+
+		<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
 </div>
 
-<p class="offerbox-title"> Offerbox title </p>
+</div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+		
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
