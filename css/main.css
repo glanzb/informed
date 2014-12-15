@@ -1,85 +1,114 @@
-/* line 13, ../sass/main.scss */
+/* line 15, ../sass/main.scss */
 body {
   padding-top: 50px;
   background: url(../img/body_bg.gif);
 }
 
-/* line 18, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 p {
   font-size: 1.063em;
   line-height: 1.223;
-}
-
-/* line 23, ../sass/main.scss */
-a:hover {
-  color: red;
+  color: #0079C1;
 }
 
 /* line 27, ../sass/main.scss */
+a {
+  text-decoration: none;
+  color: #0079C1;
+}
+
+/* line 31, ../sass/main.scss */
+h1, h4, .offerbox-title {
+  font-family: Georgia, Tahoma;
+}
+
+/* line 35, ../sass/main.scss */
+h2, h2 a {
+  color: black;
+  font-family: Georgia, Tahoma;
+  font-weight: normal;
+}
+
+/* line 41, ../sass/main.scss */
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .navbar-brand {
   padding: 0;
 }
 
-/* line 36, ../sass/main.scss */
-.carousel {
+/* line 50, ../sass/main.scss */
+.navbar li a:hover {
+  background: #61a2cc;
+}
+
+/*.carousel {
   height: 500px;
   margin-bottom: 60px;
-  margin-top: 20px;
-}
-
-/* line 42, ../sass/main.scss */
-#car-container {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-/* line 47, ../sass/main.scss */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-
-/* line 52, ../sass/main.scss */
-.carousel-inner .item img {
+  margin-top: 60px;
+}*/
+/*#car-container {
+	
+	max-width: 80%;
+	margin: 0 auto;
+}*/
+/*.carousel-inner .item img {
   position: absolute;
   top: 50px;
   left: 0;
   max-width: 400px;
 }
 
-/* line 59, ../sass/main.scss */
 .carousel-inner > .item > img {
-  position: relative;
-  top: 10px;
   max-width: 400px;
   height: auto;
+}*/
+/* line 78, ../sass/main.scss */
+.carousel-control:hover {
+  color: #61a2cc;
 }
 
-/* line 67, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
+.carousel-caption {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 87, ../sass/main.scss */
+.carousel-caption p {
+  color: #fff;
+}
+
+/* line 91, ../sass/main.scss */
 .carousel-indicators {
   bottom: 0;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .carousel-indicators .active {
   background-color: #61a2cc;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .carousel-indicators li {
   border-color: #61a2cc;
 }
 
-/*#car-container > img {
-	width: 200px;
-}*/
-/* line 85, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
+.btn-primary {
+  background: #61a2cc;
+}
+
+/* line 107, ../sass/main.scss */
+.offer-title {
+  display: block;
+  font-size: 1em;
+}
+
+/* line 113, ../sass/main.scss */
 .offerbox-title a {
   display: block;
   font-size: 2em;
@@ -91,31 +120,27 @@ a:hover {
   padding: 10px;
   margin: 5px 0;
 }
-
-/* line 97, ../sass/main.scss */
-.offer-title {
-  display: block;
-  font-size: 1em;
-}
-
-/* line 103, ../sass/main.scss */
-.offer-title ul {
-  list-style: none;
+/* line 124, ../sass/main.scss */
+.offerbox-title ul {
+  list-style: url(../img/bullet02.gif);
   -webkit-padding-start: 15px;
 }
-
-/* line 108, ../sass/main.scss */
-.offer-title ul li {
+/* line 129, ../sass/main.scss */
+.offerbox-title ul li {
   border-bottom: 2px solid #E8E8E8;
-  background-image: url(../img/bullet02.gif);
-  background-size: 10px;
-  background-repeat: no-repeat;
-  background-position: 0px 17px;
-  padding: 10px 0;
-  padding-left: 15px;
+  padding: 10px 5px;
+}
+/* line 133, ../sass/main.scss */
+.offerbox-title ul li:nth-child(odd) {
+  background: #E8E8E8;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
+.offer-title a:hover {
+  color: red;
+}
+
+/* line 142, ../sass/main.scss */
 #qa-icons {
   font-size: 3em;
   background: #e7dfc9;
@@ -125,55 +150,57 @@ a:hover {
   margin: 0 15px 10px 15px;
 }
 
-/* line 127, ../sass/main.scss */
-.glyphicon:hover {
-  color: red;
-}
-
-/* line 131, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .im-logo {
   width: 155px;
   margin: -0.75em 0 0.95em 0;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 .thumbnail {
   text-align: center;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .thumbnail:hover, .thumbnail img:hover {
   -moz-box-shadow: 0 0 0.65em 0.325em rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 0.65em 0.325em rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 0.65em 0.325em rgba(0, 0, 0, 0.1);
 }
 
-/* line 146, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .thumbnail img {
   border: 5px solid #e7dfc9;
   margin-top: 15px;
 }
 
-/* line 151, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .thumbnail img:hover {
   margin-top: 10px;
 }
 
-/* line 155, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .main-footer {
   font-size: .95em;
 }
 
-/* line 158, ../sass/main.scss */
-.link-list {
-  list-style-type: none;
-  line-height: 1.8;
-  margin: 0;
-  padding: 0;
+/* line 181, ../sass/main.scss */
+.qa-caption a {
+  display: block;
+}
+/* line 184, ../sass/main.scss */
+.qa-caption a:hover {
+  background: #e7dfc9;
 }
 
-/* line 164, ../sass/main.scss */
-.copyright {
-  opacity: .8;
-  font-size: .9em;
+/*.link-list {
+	list-style-type: none;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0;
 }
+.copyright {
+	opacity: .8;
+	font-size: .9em;
+}
+*/

@@ -10,6 +10,8 @@ $midblue: #61A2CC;
 	border-bottom: 2px solid #E8E8E8;
 }
 
+
+
 body {
   padding-top: 50px;
   background: url(../img/body_bg.gif);
@@ -18,11 +20,23 @@ body {
 p {
 	font-size: 1.063em;
 	line-height: 1.223;
+	color:#0079C1;
+
 }
 
-a:hover {
-	color: red;
+a {
+	text-decoration:none; 
+	color:#0079C1;}
+
+h1, h4, .offerbox-title {
+	font-family:Georgia, Tahoma;
 }
+
+h2, h2 a {
+	color:black; 
+	font-family:Georgia, Tahoma; 
+	font-weight:normal;}
+
 
 .starter-template {
   padding: 40px 15px;
@@ -33,23 +47,23 @@ a:hover {
 	padding: 0;
 }
 
-.carousel {
+.navbar li a:hover {
+	background: $midblue;
+}
+
+/*.carousel {
   height: 500px;
   margin-bottom: 60px;
-  margin-top: 20px;
-}
+  margin-top: 60px;
+}*/
 
-#car-container {
+/*#car-container {
+	
 	max-width: 80%;
 	margin: 0 auto;
-}
+}*/
 
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-
-.carousel-inner .item img {
+/*.carousel-inner .item img {
   position: absolute;
   top: 50px;
   left: 0;
@@ -57,12 +71,22 @@ a:hover {
 }
 
 .carousel-inner > .item > img {
-  position: relative;
-  top: 10px;
   max-width: 400px;
   height: auto;
+}*/
+
+.carousel-control:hover {
+	color: $midblue;
 }
 
+.carousel-caption {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.carousel-caption p {
+	color: #fff;
+}
 
 .carousel-indicators {
 	bottom: 0;
@@ -76,22 +100,8 @@ a:hover {
 	border-color: $midblue;
 }
 
-
-/*#car-container > img {
-	width: 200px;
-}*/
-
-
-.offerbox-title a {
-	display: block;
-	font-size: $font *2;
-	background: $bg; 
-	@include border-bottom; 
-	text-transform: uppercase; 
-	color: #2B6C9B; 
-	font-weight: 400; 
-	padding: 10px;
-	margin: 5px 0;
+.btn-primary {
+	background: $midblue;
 }
 
 .offer-title {
@@ -99,20 +109,34 @@ a:hover {
 	font-size: $font;
 }
 
+.offerbox-title {
+	a {
+		display: block;
+		font-size: $font *2;
+		background: $bg; 
+		@include border-bottom; 
+		text-transform: uppercase; 
+		color: #2B6C9B; 
+		font-weight: 400; 
+		padding: 10px;
+		margin: 5px 0;
+	}
+	ul {
 
-.offer-title ul {
-	list-style: none;
-	-webkit-padding-start: 15px
+	list-style: url(../img/bullet02.gif);
+	-webkit-padding-start: 15px;
+	}
+	ul li {
+	@include gray-line;
+   	padding: 10px 5px;
+	}
+	ul li:nth-child(odd) {
+	background: #E8E8E8; 
+	}
 }
 
-.offer-title ul li{
-	@include gray-line;
-	background-image: url(../img/bullet02.gif);
-	background-size: 10px;
-    background-repeat: no-repeat;
-    background-position: 0px 17px;  
-   	padding: 10px 0;
-   	padding-left: 15px;
+.offer-title a:hover {
+	color: red;
 }
 
 #qa-icons{
@@ -124,9 +148,6 @@ a:hover {
 	margin: 0 15px 10px 15px;
 }
 
-.glyphicon:hover {
-	color: red;
-}
 
 .im-logo {
 	width: 155px;
@@ -155,7 +176,17 @@ a:hover {
 .main-footer {
 	font-size: .95em;
 }
-.link-list {
+
+.qa-caption {
+	a {
+	display: block;
+	}
+	a:hover{
+	background: $bg;
+	}
+}
+
+/*.link-list {
 	list-style-type: none;
 	line-height: 1.8;
 	margin: 0;
@@ -165,3 +196,4 @@ a:hover {
 	opacity: .8;
 	font-size: .9em;
 }
+*/
